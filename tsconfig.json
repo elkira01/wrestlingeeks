@@ -1,0 +1,15 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es6",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "jsx": "react-jsx",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": ["dom","es2015","es2016"]
+    },
+    "include": ["assets/**/*"]
+}
