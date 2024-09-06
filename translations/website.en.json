@@ -1,3 +1,10 @@
 {
-  "hello.world": "Hello World"
+  "hello.world": "Hello World",
+  "menu": {
+    "posts": "Posts",
+    "news": "News",
+    "community": "Community",
+    "companies": "Companies",
+    "wrestlers": "Wrestlers"
+  }
 }

@@ -1,20 +1,20 @@
 <nav class="w-full h-full px-5 lg:px-20 flex justify-center items-center bg-black">
     <li>
-        <a href="/" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">Posts</a>
+        <a href="/{{ locale }}" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">{{ 'menu.posts'|trans({}, 'website') }}</a>
     </li>
     <li>
-        <a href="/" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">News</a>
+        <a href="/{{ locale }}" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">{{ 'menu.news'|trans({}, 'website') }}</a>
     </li>
     <li>
-        <a href="/" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">Wrestlers</a>
+        <a href="/{{ locale }}" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">{{ 'menu.wrestlers'|trans({}, 'website') }}</a>
     </li>
     <li>
-        <a href="/" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">Community</a>
+        <a href="/{{ locale }}" class="text-white px-3 py-2 rounded-md hover:bg-gray-600">{{ 'menu.community'|trans({}, 'website') }}</a>
     </li>
     <div class="relative inline-block text-left">
         <div>
-            <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-black text-white px-3 py-2 text-sm hover:bg-gray-600" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                Companies
+            <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-black text-white px-3 py-2 hover:bg-gray-600" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                {{ 'menu.companies'|trans({}, 'website') }}
 {#                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">#}
 {#                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />#}
 {#                </svg>#}
@@ -33,10 +33,10 @@
         </div>
     </div>
 </nav>
+
 <script>
     document.getElementById('menu-button').addEventListener('click', function() {
         let dropdownMenu = document.querySelector("[aria-labelledby=menu-button]");
         dropdownMenu.classList.toggle('hide');
     });
-    console.log('Twigged !!! JS')
 </script>
