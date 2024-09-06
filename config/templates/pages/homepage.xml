@@ -6,7 +6,7 @@
     <key>homepage</key>
 
     <view>pages/homepage</view>
-    <controller>App\Controller\Website\HomeController::indexAction</controller>
+    <controller>App\UserInterface\Controller\Website\HomeController::indexAction</controller>
     <cacheLifetime>86400</cacheLifetime>
 
     <meta>

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\Website;
+namespace App\UserInterface\Controller\Website;
 
 use Sulu\Bundle\WebsiteBundle\Controller\WebsiteController;
 use Sulu\Component\Content\Compat\StructureInterface;
@@ -11,17 +11,27 @@ use Symfony\Component\HttpFoundation\Response;
 
 class HomeController extends WebsiteController
 {
-    public function indexAction(StructureInterface $structure, $preview = false, $partial = false): Response
+    public function indexAction(
+        StructureInterface $structure,
+        $preview = false,
+        $partial = false
+    ): Response
     {
+        $locale = $this->getRequest()->getLocale();
+
         return $this->renderStructure(
             $structure,
-            [],
+            [
+                'locale' => $locale,
+            ],
             $preview,
             $partial
         );
     }
 
-    public function home(Request $request): Response
+    public function home(
+        Request $request
+    ): Response
     {
         $locale = $request->getLocale();
 
