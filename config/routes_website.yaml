@@ -1,0 +1,16 @@
+# Define your website routes here
+controllers:
+    resource:
+        path: ../src/Controller/Website/
+        namespace: App\Controller
+    type: attribute
+
+static_home:
+    path:       /{_locale}
+    controller: App\Controller\Website\HomeController::home
+    methods:    GET|HEAD
+    locale: '/%default_locale%/'
+    format: html
+    requirements:
+        _locale: en|fr
+        _format: html|xml
