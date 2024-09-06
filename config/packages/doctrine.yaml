@@ -21,11 +21,8 @@ doctrine:
                 type: xml
                 is_bundle: false
                 dir: '%kernel.project_dir%/config/mapping'
-                prefix: 'App\Core\Entity'
+                prefix: 'App\Kernel\Core\Entity'
                 alias: core
-        controller_resolver:
-            auto_mapping: false
-
 when@test:
     doctrine:
         dbal:
