@@ -1,13 +1,13 @@
 # Define your website routes here
 controllers:
     resource:
-        path: ../src/Kernel/UserInterface/Controller/Website/
-        namespace: App\Kernel\UserInterface
+        path: ../src/Kernel/
+        namespace: App\Kernel
     type: attribute
 
 static_home:
     path:       /{_locale}
-    controller: App\Kernel\UserInterface\Controller\Website\HomeController::home
+    controller: App\Kernel\Landing\UserInterface\Controller\HomeController::home
     methods:    GET|HEAD
     locale: '/%default_locale%/'
     format: html

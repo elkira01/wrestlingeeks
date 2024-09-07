@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Kernel\UserInterface\Controller\Website;
+namespace App\Kernel\Landing\UserInterface\Controller;
 
 use Sulu\Bundle\WebsiteBundle\Controller\WebsiteController;
 use Sulu\Component\Content\Compat\StructureInterface;

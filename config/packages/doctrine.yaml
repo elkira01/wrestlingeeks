@@ -17,12 +17,12 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
         mappings:
-            App:
+            App\Kernel\Promotion:
                 type: xml
                 is_bundle: false
-                dir: '%kernel.project_dir%/config/mapping'
-                prefix: 'App\Kernel\Core\Entity'
-                alias: core
+                dir: '%kernel.project_dir%/config/mapping/promotion'
+                prefix: 'App\Kernel\Promotion\Domain\Entity'
+                alias: promotion
 when@test:
     doctrine:
         dbal:
