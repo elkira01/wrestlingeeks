@@ -1,5 +1,5 @@
 {
-    "name": "wrestlingeeks",
+    "name": "sulu/skeleton",
     "license": "MIT",
     "type": "project",
     "description": "Project template for starting your new project based on the Sulu content management system",
@@ -32,6 +32,7 @@
         "ext-iconv": "*",
         "doctrine/doctrine-bundle": "^2.12",
         "doctrine/doctrine-fixtures-bundle": "^3.6",
+        "doctrine/doctrine-migrations-bundle": "*",
         "friendsofsymfony/http-cache-bundle": "^3.0",
         "handcraftedinthealps/zendsearch": "^2.1",
         "jackalope/jackalope-doctrine-dbal": "^1.10 || ^2.0",
