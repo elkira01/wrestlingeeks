@@ -8,8 +8,8 @@
             repository-class="App\Kernel\Promotion\Domain\Repository\PromotionRepository"
             table="promotion">
 
-        <id name="id" type="uuid" column="id">
-            <generator strategy="NONE"/>
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
         </id>
 
         <field name="name" column="name" type="string" nullable="false" unique="true"/>

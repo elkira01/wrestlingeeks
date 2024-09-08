@@ -14,7 +14,7 @@ class Promotion implements Timestamp
     private \DateTimeImmutable $updatedAt;
 
     public function __construct(
-        private readonly Uuid               $id,
+        private readonly int                $id,
         private readonly PromotionType      $type,
         private readonly \DateTimeImmutable $dateOfBirth,
         private readonly string             $name,
@@ -23,7 +23,7 @@ class Promotion implements Timestamp
     {
     }
 
-    public function getId(): Uuid
+    public function getId(): int
     {
         return $this->id;
     }
