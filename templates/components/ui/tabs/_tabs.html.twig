@@ -1,0 +1,21 @@
+<header class="w-full flex justify-start gap-x-5 md:gap-x-10">
+    {% set count = 0 %}
+    {% for tab in tabs %}
+        {% set count = count + 1 %}
+        <span class="tab-title" id="tab-title-{{ count }}">
+            <a href="#{{ tab.label }}">
+                {{ tab.label }}
+            </a>
+            <hr class="separator"/>
+        </span>
+    {% endfor %}
+</header>
+<div class="my-5">
+    {% set count = 0 %}
+    {% for tab in tabs %}
+        {% set count = count + 1 %}
+        <div class="w-full tab-content hidden" id="tab-content-{{ count }}">
+            {% include tab.content %}
+        </div>
+    {% endfor %}
+</div>

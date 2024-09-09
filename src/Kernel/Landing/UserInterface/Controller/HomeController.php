@@ -17,7 +17,7 @@ class HomeController extends AppController
         $locale = $request->getLocale();
 
         return $this->render(
-            'pages/homepage.html.twig',
+            'home/homepage.html.twig',
             [
                 'locale' => $locale
             ]

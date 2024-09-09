@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="flex justify-between h-full">
+        <aside class="basis-0 md:basis-1/5 border-r-1 border-dashed h-full">
+            {% block aside_left %}{% endblock %}
+        </aside>
+        <main class="basis-full md:basis-3/5 h-full px-10">
+            <header class="h-1/6">
+                {% block header %}
+                    {% include("components/layout/header.html.twig") %}
+                {% endblock %}
+            </header>
+            <hr class="my-10"/>
+            {% block main_content %}
+
+            {% endblock %}
+{#            {% include("components/layout/pagination.html.twig") %}#}
+{#            {% include("components/layout/sidebar.html.twig") %}#}
+{#            {% include("components/layout/footer.html.twig") %}#}
+        </main>
+        <aside class="basis-0 md:basis-1/5 border-l-1 h-full border-dashed">
+            {% block aside_right %}{% endblock %}
+        </aside>
+    </div>
+{% endblock %}

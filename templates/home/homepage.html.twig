@@ -1,0 +1,23 @@
+{% extends "components/layout/default_layout.html.twig" %}
+
+{% block main_content %}
+    {%
+        include "components/ui/tabs/_tabs.html.twig"
+        with {
+        'tabs': [
+            {
+                'label': 'tab.top.posts',
+                'content': 'home/_tabs/tab_top_posts.html.twig'
+            },
+            {
+                'label': 'tab.top.news',
+                'content': 'home/_tabs/tab_top_news.html.twig'
+            },
+            {
+                'label': 'tab.top.events',
+                'content': 'home/_tabs/tab_top_events.html.twig'
+            },
+        ]
+    }
+    %}
+{% endblock %}
